@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CapVault — Premium Caps</title>
+  <meta name="description" content="CapVault — premium caps, limited drops en exclusieve headwear.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <img src="logo.jpeg" alt="CapVault logo">
+      <span>CAP<span>VAULT</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+      <a href="#rules">Regels</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow">PREMIUM HEADWEAR • EST. 2026</p>
+        <h1>YOUR STYLE.<br><span>YOUR CAP.</span></h1>
+        <p class="hero-text">Ontdek exclusieve caps, sterke designs en limited drops. Welkom bij CapVault.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#shop">Bekijk collectie</a>
+          <a class="btn secondary" href="#reviews">Bekijk reviews</a>
+        </div>
+      </div>
+      <div class="hero-cap">
+        <div class="cap-card">
+          <span class="drop-label">LATEST DROP</span>
+          <img src="logo.jpeg" alt="CapVault">
+          <div>
+            <strong>CAPVAULT</strong>
+            <small>Premium collection</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div>CAPVAULT</div><div>PREMIUM CAPS</div><div>LIMITED DROPS</div><div>QUALITY FIRST</div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WAT KLANTEN ZEGGEN</p>
+        <h2>Reviews</h2>
+      </div>
+      <div class="review-grid">
+        <article class="review"><div class="stars">★★★★★</div><p>“Mooie kwaliteit en de cap zit perfect. Zeker opnieuw bestellen.”</p><strong>— Milan</strong></article>
+        <article class="review"><div class="stars">★★★★★</div><p>“Snelle levering, goede communicatie en een strak design.”</p><strong>— Yassin</strong></article>
+        <article class="review"><div class="stars">★★★★★</div><p>“De cap ziet er in het echt nog beter uit. Heel tevreden.”</p><strong>— Noah</strong></article>
+      </div>
+    </section>
+
+    <section id="shop" class="section shop-section">
+      <div class="section-heading">
+        <p class="eyebrow">THE VAULT</p>
+        <h2>Shop</h2>
+      </div>
+      <div class="product-grid">
+        <article class="product">
+          <div class="product-image"><img src="logo.jpeg" alt="CapVault Classic Cap"></div>
+          <div class="product-info"><h3>CapVault Classic</h3><p>Black / White</p><div class="buy-row"><strong>€29,95</strong><button onclick="addToCart('CapVault Classic')">Toevoegen</button></div></div>
+        </article>
+        <article class="product">
+          <div class="product-image dark"><img src="logo.jpeg" alt="CapVault Shadow Cap"></div>
+          <div class="product-info"><h3>CapVault Shadow</h3><p>Black Edition</p><div class="buy-row"><strong>€34,95</strong><button onclick="addToCart('CapVault Shadow')">Toevoegen</button></div></div>
+        </article>
+        <article class="product">
+          <div class="product-image light"><img src="logo.jpeg" alt="CapVault Signature Cap"></div>
+          <div class="product-info"><h3>CapVault Signature</h3><p>Limited Edition</p><div class="buy-row"><strong>€39,95</strong><button onclick="addToCart('CapVault Signature')">Toevoegen</button></div></div>
+        </article>
+      </div>
+      <p id="cart-message" class="cart-message"></p>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">NEEM CONTACT OP</p>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>CapVault</h3>
+          <p>Heb je een vraag over een bestelling, product of samenwerking? Stuur ons een bericht.</p>
+          <p><strong>E-mail</strong><br><a href="mailto:info@capvault.be">info@capvault.be</a></p>
+          <p><strong>Instagram</strong><br><a href="#">@capvault</a></p>
+        </div>
+        <form class="contact-form" onsubmit="sendMessage(event)">
+          <input type="text" placeholder="Naam" required>
+          <input type="email" placeholder="E-mail" required>
+          <textarea rows="6" placeholder="Je bericht..." required></textarea>
+          <button class="btn primary" type="submit">Bericht versturen</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="rules" class="section rules-section">
+      <div class="section-heading">
+        <p class="eyebrow">CAPVAULT POLICY</p>
+        <h2>Regels</h2>
+      </div>
+      <div class="rules">
+        <div class="rule"><span>01</span><div><h3>Bestellingen</h3><p>Controleer je gegevens en bestelling voordat je deze bevestigt.</p></div></div>
+        <div class="rule"><span>02</span><div><h3>Betaling</h3><p>Een bestelling wordt verwerkt nadat de betaling correct is ontvangen.</p></div></div>
+        <div class="rule"><span>03</span><div><h3>Retour</h3><p>Retourvoorwaarden worden duidelijk vermeld bij iedere bestelling.</p></div></div>
+        <div class="rule"><span>04</span><div><h3>Respect</h3><p>Communicatie met CapVault en andere klanten blijft respectvol.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="logo.jpeg" alt=""> <span>CAPVAULT</span></div>
+    <p>© 2026 CapVault. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
